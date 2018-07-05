@@ -29,4 +29,29 @@ class BinaryTranslator
       "z" => "011010"
     }
   end
+
+  def has_key
+    @alpha_to_binary.has_key?
+    return true
+  else
+    return false
+  end
+
+  def has_value
+    @alpha_to_binary.has_value?
+      return true
+    else
+      return false
+  end
+
+
+  def seperate_to_keys
+    keys = []
+    keys << @alpha_to_binary.map.keys
+  end
+
+  def seperate_to_values
+    values = []
+    values << @alpha_to_binary.map.values
+  end
 end
